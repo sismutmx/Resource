@@ -34,26 +34,10 @@ trait TimestampableTrait
     }
 
     /**
-     * @param \DateTimeInterface|null $createdAt
-     */
-    public function setCreatedAt(?\DateTimeInterface $createdAt): void
-    {
-        $this->createdAt = $createdAt;
-    }
-
-    /**
      * @return \DateTimeInterface|null
      */
     public function getUpdatedAt(): ?\DateTimeInterface
     {
         return $this->updatedAt;
-    }
-
-    /**
-     * @param \DateTimeInterface|null $updatedAt
-     */
-    public function setUpdatedAt(?\DateTimeInterface $updatedAt): void
-    {
-        $this->updatedAt = $updatedAt;
     }
 }
